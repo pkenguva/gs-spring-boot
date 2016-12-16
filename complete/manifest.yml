@@ -1,0 +1,11 @@
+---
+applications:
+- name: nisum-demo
+  buildpack: java_buildpack
+  path: build/libs/gs-spring-boot-0.1.0.jar
+  instances: 1
+  timeout: 180
+  memory: 512M
+  env:
+    JBP_CONFIG_OPENJDK: 'version: 1.7.+'
+    
